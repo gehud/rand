@@ -48,7 +48,6 @@
 #![deny(missing_docs)]
 #![deny(missing_debug_implementations)]
 #![doc(test(attr(allow(unused_variables), deny(warnings))))]
-#![no_std]
 #![cfg_attr(feature = "simd_support", feature(stdsimd))]
 #![cfg_attr(doc_cfg, feature(doc_cfg))]
 #![allow(
@@ -56,7 +55,6 @@
     clippy::neg_cmp_op_on_partial_ord,
 )]
 
-#[cfg(feature = "std")] extern crate std;
 #[cfg(feature = "alloc")] extern crate alloc;
 
 #[allow(unused)]

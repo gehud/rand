@@ -36,12 +36,10 @@
 #![deny(missing_debug_implementations)]
 #![doc(test(attr(allow(unused_variables), deny(warnings))))]
 #![cfg_attr(doc_cfg, feature(doc_cfg))]
-#![no_std]
 
 use core::convert::AsMut;
 use core::default::Default;
 
-#[cfg(feature = "std")] extern crate std;
 #[cfg(feature = "alloc")] extern crate alloc;
 #[cfg(feature = "alloc")] use alloc::boxed::Box;
 
